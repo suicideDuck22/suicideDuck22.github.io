@@ -1,0 +1,1 @@
+# suicideDuck22.github.io
