@@ -27,6 +27,17 @@ a{
     text-decoration: none;
     color: inherit;
 }
+ul{
+    padding-left: 28px;
+    list-style-type: square;
+}
+li{
+    transition: .3s;
+    width: fit-content;
+}
+#projects > li:hover{
+    margin-left: 9px;
+}
 /* Start flexbox classes */
 .d-flex{
     display: flex;
@@ -58,4 +69,16 @@ a{
     } to {
         transform: rotate(30deg);
     }
+}
+.contacts > h3{
+    text-align: center;
+}
+.arrow-icon{
+    display: block;
+    background-position: center;
+    background-size: contain;
+    background-image: url("./assets/arrow-right.png");
+    width: 15px;
+    height: 15px;
+    margin-right: 2px;
 }
