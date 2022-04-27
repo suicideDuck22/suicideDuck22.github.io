@@ -16,7 +16,7 @@ const userSocialMedias = {
 function changeSocialLinks(){
     for(let li of socialLink.children){
         const social = li.getAttribute('class');
-        li.children[0].href = `https://www.${social}.com.br/${userSocialMedias[social]}`
+        li.children[0].href = `https://www.${social}.com/${userSocialMedias[social]}`
     }
 }
 
