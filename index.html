@@ -11,6 +11,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="d-flex justify-center align-center">
+        <div id="navigator" class="d-flex justify-center align-center">
+            <nav>
+                <a href="#about">
+                    About
+                </a>
+                |
+                <a href="#projects">
+                    Projects
+                </a>
+                |
+                <a href="#stacks">
+                    Knowledge
+                </a>
+                |
+                <a href="#contacts">
+                    Contact
+                </a>
+            </nav>
+        </div>
+    </header>
     <main class="d-flex justify-center">
         <div class="container">
             <h1>Renan Dorneles</h1>
@@ -18,7 +39,7 @@
                 <h2>Hey there, welcome to my personal website!</h2>
             <span role="img" class="handwave-emoji">👋🏼</span>
             </div>
-        <section class="about">
+        <section id="about">
             <div class="d-flex align-center">
                 <span role="img" class="arrow-icon"></span>
                 <h3>About</h3>
@@ -29,13 +50,13 @@
             <p>Constantly learning and charging myself to make anything relevant, because this I writed this simple website, just for fun.</p>
             <p>Very curious about everything, and a computer lover in general.</p>
         </section>
-        <section class="projects">
+        <section id="projects">
             <div class="d-flex align-center">
                 <span role="img" class="arrow-icon"></span>
                 <h3>Projects</h3>
             </div>
             <p>I have a little quantity of simple projects. (Click on the text to go to the repository on GitHub :D)</p>
-            <ul id="projects">
+            <ul id="projectsNames">
                 <li class="authentication-page">
                     <a href="" target="_blank">
                         Authentication Page
@@ -81,7 +102,7 @@
             </ul>
             <p>And more, but more irelevant projects...</p>
         </section>
-        <section class="stacks">
+        <section id="stacks">
             <div class="d-flex align-center">
                 <span role="img" class="arrow-icon"></span>
                 <h3>Tools and languages that I've had contact.</h3>
@@ -102,11 +123,27 @@
                 <p>And more... On my personals projects, I even put the modules used on the ReadMe.md file!</p>
             </ul>
         </section>
-        <section class="contacts">
+        <section id="contacts">
             <h3>You can contact me on one of my social medias below, or click <a href="mailto:rdorneles64@gmail.com"><strong>HERE</strong></a> to sent me an e-mail!</h3>
-            <span class="github-icon"></span>
-            <span class="ig-icon"></span>
-            <span class="fb-icon"></span>
+            <div class="d-flex justify-center align-center">
+                <ul id="socialLink" class="d-flex">
+                    <li class="github">
+                        <a href="">
+                            <span class="social-icon github-icon"></span>
+                        </a>
+                    </li>
+                    <li class="instagram">
+                        <a href="https://www.instagram.com/renas.js/">
+                            <span class="social-icon ig-icon"></span>
+                        </a>
+                    </li>
+                    <li class="facebook">
+                        <a href="">
+                            <span class="social-icon fb-icon"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
         </div>
     </main>

@@ -1,12 +1,16 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: rgb(50,24,57);
     background-color: linear-gradient(180deg, rgba(50,24,57,1) 0%, rgba(106,57,106,1) 51%, rgba(59,30,75,1) 100%);
     color: #d6bee8;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 h1{
     font-weight: 600;
-    font-style: italic;
+    font-style: italic; 
 }
 h2{
     margin: 0;
@@ -35,7 +39,7 @@ li{
     transition: .3s;
     width: fit-content;
 }
-#projects > li:hover{
+#projectsNames > li:hover{
     margin-left: 9px;
 }
 /* Start flexbox classes */
@@ -52,6 +56,17 @@ li{
     flex-direction: column;
 }
 /* End flexbox classes */
+/* Start header/navbar style */
+header{
+    height: 40px;
+    width: 100%;
+    background-color: #412e50;
+}
+#navigator > nav > a{
+    font-weight: bold;
+    font-size: 19px;
+}
+/* End header/navbar style */
 .container{
     padding: 0 8px;
 }
@@ -82,3 +97,57 @@ li{
     height: 15px;
     margin-right: 2px;
 }
+/* Start Social Icons */
+#contacts{
+    margin-bottom: 30px;
+}
+.social-icon{
+    display: block;
+    background-position: center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-right: 7px;
+    transition: .6s;
+}
+.github-icon{
+    background-image: url("./assets/github-icon.png");
+}
+.github-icon:hover{
+    background-image: url("./assets/github-hover-icon.png");
+}
+.ig-icon{
+    
+    background-image: url("./assets/ig-icon.png");
+}
+.ig-icon:hover{
+    background-image: url("./assets/ig-hover-icon.png");
+}
+.fb-icon{
+    background-image: url("./assets/fb-icon.png");
+}
+.fb-icon:hover{
+    background-image: url("./assets/fb-hover-icon.png");
+}
+#socialLink{
+    list-style: none;
+    margin: 0;
+}
+/* End Social Icons */
+/* Start Scroll Style */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #d2c5db;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #33293a;
+  }
+  /* End Scroll Style */
