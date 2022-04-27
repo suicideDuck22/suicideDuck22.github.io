@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(50,24,57);
+    background-color: linear-gradient(180deg, rgba(50,24,57,1) 0%, rgba(106,57,106,1) 51%, rgba(59,30,75,1) 100%);
+    color: #d6bee8;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-weight: 600;
+    font-style: italic;
+}
+h2{
+    margin: 0;
+}
+h2, h3{
+    font-weight: 400;
+}
+h3{
+    text-decoration: underline;
+}
+p, li{
+    font-weight: 300;
+}
+p{
+    margin: 4px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* Start flexbox classes */
+.d-flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.direction-column{
+    flex-direction: column;
+}
+/* End flexbox classes */
+.container{
+    padding: 0 8px;
+}
+.handwave-emoji{
+    margin: 0 7px 0 3px;
+    display: block;
+    width: 36px;
+    opacity: 0.6;
+    font-size: 30px;
+    animation: waving 1s ease-in-out infinite alternate;
+}
+@keyframes waving {
+    from{
+        transform: rotate(-10deg);
+    } to {
+        transform: rotate(30deg);
+    }
+}
