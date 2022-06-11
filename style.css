@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-pading);
 }
 body{
     background-color: rgb(50,24,57);
@@ -58,6 +59,7 @@ li{
 /* End flexbox classes */
 /* Start header/navbar style */
 header{
+    z-index: 99;
     height: 40px;
     width: 100%;
     background-color: #412e50;
@@ -101,6 +103,9 @@ header{
 #contacts{
     margin-bottom: 30px;
 }
+#contact > h3 {
+    text-align: center;
+}
 .social-icon{
     display: block;
     background-position: center;
@@ -134,7 +139,7 @@ header{
     margin: 0;
 }
 /* End Social Icons */
-/* Start Scroll Style */
+/* Start Scrollbar Style */
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -150,4 +155,4 @@ header{
   ::-webkit-scrollbar-thumb {
     background: #33293a;
   }
-  /* End Scroll Style */
+  /* End Scrollbar Style */

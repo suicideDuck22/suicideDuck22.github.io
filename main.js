@@ -5,7 +5,7 @@ function changeProjectLinks(){
     }
 }
 
-changeProjectLinks();
+changeProjectLinks()
 
 const userSocialMedias = {
     github: 'suicideDuck22',
@@ -20,4 +20,16 @@ function changeSocialLinks(){
     }
 }
 
-changeSocialLinks();
+changeSocialLinks()
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY > 40){
+        document.querySelector('header').style.position = 'fixed'
+    } else {
+        document.querySelector('header').style.position = 'static'
+    }
+})
+
+const navigationHeight = document.querySelector('header').offsetHeight
+
+document.documentElement.style.setProperty('--scroll-pading', `${navigationHeight - 1}px`)
